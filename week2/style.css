@@ -1,0 +1,56 @@
+#breadcrumbs ul {
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(240, 240, 245);
+    font-size: 120%;
+    font-family: sans-serif;
+    color: #1b1b20;
+}
+
+#breadcrumbs ul li {
+    display: inline;
+    margin: 50px;
+}
+
+.product-title {
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+.product-image img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+.product-options {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.size-options {
+    margin-bottom: 10px;
+}
+
+.button-size {
+    background-color: aqua;
+
+}
+
+.quantity {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.add-to-bag {
+    background-color: rgba(41, 206, 115, 0.89);
+    font-size: larger;
+    font-family: sans-serif;
+    font-style: inherit;
+    color: aliceblue;
+}
