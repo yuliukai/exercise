@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Datepicker CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CampusBite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Types
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bar</a></li>
+                            <li><a class="dropdown-item" href="#">Counter</a></li>
+                            <li><a class="dropdown-item" href="#">Standard</a></li>
+                            <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <form class="row">
+            <div class="col-md-4 mb-3">
+                <label for="datepicker" class="form-label">Select Date</label>
+                <input type="text" class="form-control" id="datepicker" placeholder="Select date">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="peopleSelect" class="form-label">Number of People</label>
+                <select class="form-select" id="peopleSelect">
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label class="invisible">Search</label>
+                <button type="submit" class="btn btn-primary w-100">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="container d-flex justify-content-center mt-3">
+        <div class="card mb-3" style="max-width: 75%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://resizer.otstatic.com/v2/photos/xlarge/4/60813967.webp"
+                        class="img-fluid rounded-start" alt="The Art Kitchen.">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">The Art Kitchen</h5>
+                        <p class="card-text">Our menu is based on the principles of Royal Thai Cuisine but with a simple
+                            presentation and a strong emphasis on fresh, high-quality ingredients that give exceptional
+                            taste.</p>
+                        <p class="card-text"><small class="text-body-secondary">Number of people in queue: 10</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-3">
+        <div class="card mb-3" style="max-width: 75%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://resizer.otstatic.com/v2/photos/xlarge/2/51799882.webp"
+                        class="img-fluid rounded-start" alt="Rose and Crown">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Rose and crown</h5>
+                        <p class="card-text">A favourite with the townspeople, who use it variously as a watering-hole,
+                            The Rose amd Crown is the place for a spot of lunch or a celebration dinner.</p>
+                        <p class="card-text"><small class="text-body-secondary">Number of people in queue: 10</small>
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">hours of operation: Daily
+                                12:00-23:00</small></p>
+                        <p class="card-text"><small class="text-body-secondary">Cuisine: Thai, Contemporary
+                                Asian</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-3">
+        <div class="card mb-3" style="max-width: 75%; ">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://resizer.otstatic.com/v2/photos/xlarge/3/32488087.webp"
+                        class="img-fluid rounded-start" alt="Varsity Warwick">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Varsity Warwick</h5>
+                        <p class="card-text">Varsity is a friendly venue offering delicious food, great drinks and
+                            unforgettable experiences.</p>
+                        <p class="card-text"><small class="text-body-secondary">Number of people in queue: 10</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-3">
+        <div class="card mb-3" style="max-width: 75%; ">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://resizer.otstatic.com/v2/photos/xlarge/2/29630434.webp"
+                        class="img-fluid rounded-start" alt="Opheem">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Opheem</h5>
+                        <p class="card-text">When you come to Opheem, you get an insight into the inner workings of my
+                            mind. We are striving to push the boundaries with Indian flavours, but with cooking
+                            techniques from all over the world, some traditional, and some very modern.</p>
+                        <p class="card-text"><small class="text-body-secondary">Number of people in queue: 10</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        // Initialize Datepicker
+        $('#datepicker').datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: true,
+            todayHighlight: true
+        });
+    </script>
+</body>
+
+</html>
